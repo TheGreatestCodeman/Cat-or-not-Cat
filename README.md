@@ -7,8 +7,6 @@ This is a simple Flask web application that uses the pretrained MobileNetV2 mode
 - Uses TensorFlow Keras MobileNetV2 pretrained on ImageNet
 - Detects if an image contains a cat based on classification labels
 - Returns the top prediction label and confidence score
-- Simple REST API endpoint `/predict` accepting image uploads
-- Web interface served at `/` to upload images and see results
 
 ## Installation
 
