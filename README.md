@@ -1,7 +1,5 @@
 # Cat-or-not-Cat: A small app to detect whether an uploaded image is of a cat or not 🐱
-This is a simple Flask web application that uses the pretrained MobileNetV2 model to clas
 This is a simple Flask web application that uses the pretrained MobileNetV2 model to classify whether an uploaded image contains a cat. The model is loaded with ImageNet weights and performs inference on user-uploaded images via a web interface.
-
 ## Features
 
 - Uses TensorFlow Keras MobileNetV2 pretrained on ImageNet
