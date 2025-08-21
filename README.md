@@ -11,7 +11,7 @@ This is a simple Flask web application that uses the pretrained MobileNetV2 mode
 ## Tools/Languages:
  - Python & HTML
  - Python libraries: Flask, PIL, io, Numpy
- - Tensor Keras Preprocessing for converting images arrays/vectors which the model can process
+ - Tensor Keras Preprocessing for converting images into arrays/vectors which the model can process
    
 ## Installation
 
