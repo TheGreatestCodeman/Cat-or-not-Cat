@@ -8,10 +8,10 @@ This is a simple Flask web application that uses the pretrained MobileNetV2 mode
 - Web interface served at `/` to upload images and see results
 
 ## Installation
-### 1. Clone the repository
+### 1. Clone the repository  
 Open a terminal (Command Prompt, PowerShell, or shell) on your local machine, then run:
-  git clone <repository-url>
-   cd <repository-folder>
+  git clone repository-url
+  cd repository-folder
 Replace `<repository-url>` with the actual GitHub repo link.
 ### 2. Create and activate a Python virtual environment (optional but recommended)
 Still in your terminal, run:
