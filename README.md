@@ -11,8 +11,10 @@ This is a simple Flask web application that uses the pretrained MobileNetV2 mode
 ## Installation
 
 1. Clone the repository(use these commands in cmd, power shell etc):
-   git clone <repository-url>
-   cd <repository-folder>
+ ```bash
+git clone <repository-url>
+cd <repository-folder>
+```
 
 2. Create and activate a Python virtual environment:
   python -m venv venv
