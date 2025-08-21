@@ -16,8 +16,7 @@ This is a simple Flask web application that uses the pretrained MobileNetV2 mode
    cd <repository-folder>
 
 2. Create and activate a Python virtual environment:
-  python -m venv venv
-  source venv/bin/activate # On Windows: venv\Scripts\activate
+   On Windows: venv\Scripts\activate
 
 3. Install dependencies:
   pip install -r requirements.txt
