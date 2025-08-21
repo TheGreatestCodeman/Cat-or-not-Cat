@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cat or Not?</title>
+  <style>
+    body { font-family: 'Courier New', monospace; text-align: center; padding: 40px; }
+    input, button { margin: 10px; padding: 10px; }
+    #result { font-size: 20px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>🐱 Is it a Cat or Not?</h1>
+  <input type="file" id="imageInput">
+  <button onclick="uploadImage()">Check</button>
+  <p id="result"></p>
+
+  <script>
+    async function uploadImage() {
+      const input = document.getElementById('imageInput');
+      const file = input.files[0];
+      if (!file) {
+        alert("Please select an image!");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const res = await fetch("/predict", {
+        method: "POST",
+        body: formData
+      });
+      const data = await res.json();
+      document.getElementById("result").innerText = 
+        data.is_cat ? `✅ It's definately (probably?) a Cat! 🐱(${data.label}, ${(data.confidence*100).toFixed(2)}%)`
+                    : `❌ It is anything but a Cat! (Predicted: ${data.label}, ${(data.confidence*100).toFixed(2)}%)`;
+    }
+  </script>
+</body>
+</html>
