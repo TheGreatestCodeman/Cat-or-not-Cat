@@ -8,6 +8,10 @@ This is a simple Flask web application that uses the pretrained MobileNetV2 mode
 - Detects if an image contains a cat based on classification labels
 - Returns the top prediction label and confidence score
 
+##Tools/ Languages:
+ - Python & HTML
+ - Python libraries: Flask, PIL, io, Numpy
+ - Tensor Keras Preprocessing for converting images arrays/vectors which the model can process
 ## Installation
 
 1. Clone the repository(use these commands in cmd, power shell etc):
