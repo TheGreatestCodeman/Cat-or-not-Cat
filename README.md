@@ -17,17 +17,22 @@ cd <repository-folder>
 ```
 
 2. Create and activate a Python virtual environment:
+```bash
   python -m venv venv
   # On Windows: venv\Scripts\activate
-
+```
 3. Install dependencies:
+```bash
   pip install -r requirements.txt
+```
 
 ## Usage
-
-1. Run the Flask app: python app.py
-2. Open your browser and go to: http://localhost:5000/
-3. Upload an image to check if it contains a cat. The result will show if a cat was detected, the predicted label, and confidence.
+1. Run the Flask app:
+```bash
+   python app.py
+```
+3. Open your browser and go to: http://localhost:5000/
+4. Upload an image to check if it contains a cat. The result will show if a cat was detected, the predicted label, and confidence.
 
 
 
